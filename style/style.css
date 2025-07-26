@@ -1,0 +1,207 @@
+/* body style */
+
+body{
+    background-color: aliceblue;
+}
+
+/* shared style */
+
+section{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 140px;
+}
+
+.section-title{
+    font-size: 3.12rem;
+    font-weight: 700;
+}
+
+
+.sub-title{
+    color: rgb(233, 90, 8);
+    margin-bottom: 16px;
+}
+
+.section-paragraph{
+    font-size: 1.38rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+}
+
+.text-dark-01{
+    color: rgb(137, 135, 161);
+}
+
+.text-dark-02{
+    color: rgb(37, 36, 50);
+}
+
+.text-dark-03{
+    color: rgb(0, 0, 0);
+}
+
+.text-dark-04{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* navbar related style */
+
+header{
+    margin-bottom: 270px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    
+}
+
+
+
+.nav-items > li{
+    list-style: none;
+    margin-left: 48px;
+    
+}
+
+li > a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 1.5rem;
+    
+}
+
+
+/* banner style */
+
+.banner-container{
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 120px;
+}
+
+.banner-title{
+    font-size: 4.06rem;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+#banner-sub-title{
+    color: rgb(233, 90, 8);
+}
+
+.banner-paragraph{
+    font-weight: 400;
+    font-size: 1.48rem;
+    line-height: 1.70rem;
+    text-wrap: wrap;
+}
+
+/* out plants section style */
+
+
+.plants-content{
+    text-align: center;
+}
+
+.plants-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+#card-title{
+    font-size: 1.38rem;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+    margin-bottom: 20px;
+}
+
+#card-price{
+    font-size: 1.38rem;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+    margin-bottom: 30px;
+}
+
+.plant-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background-color: rgb(233, 90, 8);
+    padding: 26px 50px;
+    width: 270px;
+}
+
+/* lover plants section */
+
+.lover-plants-container{
+    display: flex;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    gap: 60px;
+}
+
+.lovers-plants-content ul > li{
+    font-size: 1.38rem;
+    font-family: 400;
+    margin-bottom: 15px;
+    
+}
+
+
+
+/* Responsive for mobile device */
+
+@media screen and (max-width: 576px) {
+    section{
+        margin: 0 auto;
+        margin-bottom: 120px;
+    }
+    
+    #nav-item{
+        visibility: hidden;
+        gap: 0px
+    }
+
+    .banner-container{
+        flex-direction: column-reverse
+    }
+    .banner-items img{
+        width: 130%;
+        height: auto;
+        align-items: center;
+    }
+
+    .plants-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plants-cards img{
+        width: 100%;
+    }
+
+    .lover-plants-container{
+        flex-direction: column;
+    }
+}
